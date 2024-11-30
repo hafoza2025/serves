@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #0b0a0a;
+    line-height: 1.6;
+}
+
+h2 {
+    text-align: center;
+    background: linear-gradient(90deg, #ff00ff, #ffff00);
+    /* Gradient color */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    /* Bold text for highlighted portion */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin: 0 auto;
+    width: 80%;
+}
+
+details {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+summary {
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #1a73e8;
+    padding: 5px;
+}
+
+details[open] summary {
+    color: #d32f2f;
+}
+
+ul {
+    list-style: none;
+    margin-left: 20px;
+}
+
+li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+li:before {
+    content: "• ";
+    color: #1a73e8;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .section {
+        width: 100%;
+    }
+}
+summary {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000000;
+    /* لون مميز */
+    list-style: none;
+    /* إخفاء علامة القائمة */
+    outline: none;
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+summary:hover {
+    color: #FFA500;
+    /* لون مميز عند تمرير الماوس */
+}
+
+details li {
+    font-size: 1rem;
+    color: #e0e0e0;
+    padding: 5px 0 5px 20px;
+}
+
+details {
+    margin: 15px 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+details[open] {
+    background-color: rgb(255, 255, 255);
+    /* تغيير لون الخلفية عند الفتح */
+}
+
+summary {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000000;
+    /* لون مميز */
+    list-style: none;
+    /* إخفاء علامة القائمة */
+    outline: none;
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+summary:hover {
+    color: #ff0000c4;
+    /* لون مميز عند تمرير الماوس */
+}
+
+details li {
+    font-size: 1rem;
+    color: #000000;
+    padding: 5px 0 5px 20px;
+}
